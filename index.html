@@ -15,8 +15,6 @@
 
 <body>
 
-
-
   <div class="prices-items">
     <div class="basics prices-element">
       <div class="label">
@@ -25,7 +23,9 @@
       </div>
       <div class="content">
         <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-        <p><span class="price">$15</span> / per hour</p>
+        <p class="price">
+          <span class="color sign">$</span><span class="color amount">15</span> / per hour
+        </p>
         <button class="order">Order</button>
       </div>
     </div>
@@ -36,7 +36,9 @@
       </div>
       <div class="content">
         <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-        <p><span class="price">$25</span> / per hour</p>
+        <p class="price">
+          <span class="color sign">$</span><span class="color amount">25</span> / per hour
+        </p>
         <button class="order">Order</button>
       </div>
     </div>
@@ -46,26 +48,22 @@
         <div class="svg"></div>
       </div>
       <div class="content">
-        <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-        <p><span class="price">$35</span> / per hour</p>
+        <p class="text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+        <p class="price">
+          <span class="color sign">$</span><span class="color amount">35</span> / per hour
+        </p>
         <button class="order">Order</button>
       </div>
     </div>
   </div>
-
-
-
-
-
-  <script src="script.js"></script>
   <script>
   const accordion = document.getElementsByClassName('prices-element');
 
   for (let i = 0; i < accordion.length; i++) {  
-  accordion[i].addEventListener('click', function() {
+    accordion[i].addEventListener('click', function() {
     this.classList.toggle('active');
-  })
-  }
+    });
+  };
   </script>
 </body>
 
