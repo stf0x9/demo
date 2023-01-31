@@ -4,11 +4,28 @@
   padding: 0;
 }
 
+
+
+.prices-items {
+  max-width: 332px;
+  padding: 34px 41px;
+
+  margin: 100px;
+
+
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+
 .prices-element {
   max-width: 250px;
   margin-bottom: 32px;
   border-radius: 20px;
   background-color: #EDF2EC;
+}
+
+.prices-element:last-child {
+  margin-bottom: 0;
 }
 
 .prices-element .label {
