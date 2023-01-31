@@ -1,0 +1,307 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #636060;
+}
+
+ul,
+li {
+  font-size: 0px;
+}
+
+.navbar {
+  font-family: 'Inika', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.navbar .logo {
+  /* line-height: 21px; */
+}
+
+.nav-list a:hover {
+  color: #E06733;
+  font-weight: 700;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: #010201;
+  text-decoration: none;
+}
+
+.welcome-content h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+
+  color: #717171;
+}
+
+.welcome-content p {
+  line-height: 35px;
+}
+
+.welcome-content h1 .plants-green {
+  color: #499A18;
+}
+
+.welcome-content .learn-more .btn {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.welcome-content .learn-more .btn:hover {
+  color: #FFFFFF;
+}
+
+.about-content h2 {
+  font-family: 'Inika', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+}
+
+.about-content p {
+  line-height: 30px;
+}
+
+.about-content h2 .about-adj {
+  color: #E06733;
+}
+
+.services-content h2 {
+  font-family: 'Inika', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+
+  color: #499A18;
+}
+
+.services-btns .btn {
+  font-family: 'Inika', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #E06733;
+  text-decoration: none;
+}
+
+.services-btns .btn:hover {
+  color: #FFFFFF;
+}
+
+.services-item h3 {
+  font-weight: 700;
+  line-height: 20px;
+  color: #E06733;
+  text-align: center;
+}
+
+.services-item p {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.prices h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.prices h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: #000000;
+}
+
+.prices h3 span {
+  color: #499A18;
+}
+
+
+.prices-block .prices-items {
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+.prices-contact .btn {
+  font-family: 'Inika', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #E06733;
+
+  text-decoration: none;
+}
+
+.prices-contact .btn:hover {
+  color: #FFFFFF;
+}
+
+.contacts h2 {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+
+  color: #499A18;
+}
+
+.footer p,
+.footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+@media (max-width: 890px) {
+  .welcome-content h1 {
+    font-size: 35px;
+  }
+
+  .welcome-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .about-content h2 {
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .services-content h2 {
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .svc-item-content h3 {
+    font-size: 20px;
+  }
+
+  .svc-item-content p {
+    text-align: center;
+  }
+
+  .prices h2 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .prices h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .footer {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 727px) {
+  .welcome h1 {
+    text-align: center;
+  }
+
+  .welcome p {
+    text-align: center;
+  }
+
+  .prices h2 {
+    text-align: center;
+  }
+
+  .prices h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 510px) {
+  .welcome-content h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  
+  .welcome p {
+    text-align: left;
+  }
+
+  .welcome-content .learn-more .btn {
+    font-size: 13px;
+  }
+  .services-btns .btn {
+    font-size: 15px;
+  }
+  .prices-contact .btn {
+    font-size: 15px;
+  }
+
+
+  .about-content h2 {
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+  }
+
+  .services-content h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .prices h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .prices h3 {
+    font-size: 20px;
+  }
+  
+
+  .contacts h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: 439px) {
+  .prices-element {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 410px) {
+  .welcome-content .learn-more .btn {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-content p {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.prices-element {
+  max-width: 250px;
+}
+
+.prices-element .label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  padding-left: 40px;
+  border-radius: 20px;
+  background-color: #EDF2EC;
+  cursor: pointer;
+  
+}
+
+.prices-element .label .svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 40px;
+  background: url(../assets/img/accordion-btn.svg) no-repeat center;
+  background-size: cover;
+  transition: background 0.2s;
+}
+
+.prices-element .content {
+  height: 0;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #D6E7D2;
+  font-size: 10px;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.prices-element.active .label {
+  background-color: #D6E7D2;
+  border-radius: 20px 20px 0 0;
+  transition: background 0.2s;
+}
+
+.prices-element.active .label .svg {
+  transform: rotate(360deg);
+  transition: transform 0.5s;
+  background: url(../assets/img/accordion-btn-active.svg) no-repeat center;
+}
+
+
+.prices-element.active .content {
+  height: calc(154px - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 0 20px 20px;
+}
+
+.prices-element .content button {
+  width: 85px;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 12px;
+}
+
+
+.prices-element.active .content .price {
+  padding-top: 10px;
+}
+
+
+
+

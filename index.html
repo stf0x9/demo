@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inika&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/img/logo_vector.svg">
+  <title>Plants</title>
+</head>
+
+<body>
+
+
+
+  <div class="prices-items">
+    <div class="basics prices-element">
+      <div class="label">
+        <p>Basics</p>
+        <div class="svg"></div>
+      </div>
+      <div class="content">
+        <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+        <p><span class="price">$15</span> / per hour</p>
+        <button class="order">Order</button>
+      </div>
+    </div>
+    <div class="standard prices-element">
+      <div class="label">
+        <p>Standard</p>
+        <div class="svg"></div>
+      </div>
+      <div class="content">
+        <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+        <p><span class="price">$25</span> / per hour</p>
+        <button class="order">Order</button>
+      </div>
+    </div>
+    <div class="procare prices-element">
+      <div class="label">
+        <p>Pro care</p>
+        <div class="svg"></div>
+      </div>
+      <div class="content">
+        <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+        <p><span class="price">$35</span> / per hour</p>
+        <button class="order">Order</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="script.js"></script>
+  <script>
+  const accordion = document.getElementsByClassName('prices-element');
+
+  for (let i = 0; i < accordion.length; i++) {  
+  accordion[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+  })
+  }
+  </script>
+</body>
+
+</html>

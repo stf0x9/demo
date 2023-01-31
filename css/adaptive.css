@@ -1,0 +1,575 @@
+@media (max-width: 1320px) {
+  .contacts-select-container {
+    margin-left: -190px;
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 1169px) {
+  .about-content {
+    max-width: 500px;
+  }
+
+  .welcome-content {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1089px) {
+  .services-list {
+    justify-content: space-around;
+    min-height: 1464px;
+  }
+}
+
+@media (max-width: 1065px) {
+  .welcome .leafs-image1 {
+    width: 280px;
+    height: 254.12px;
+  }
+
+  .plant-image {
+    width: 264px;
+    height: 279px;
+  }
+
+  .contacts-select-container {
+    margin-left: -250px;
+  }
+}
+
+@media (max-width: 1005px) {
+  .services-list {
+    justify-content: space-between;
+  }
+
+  .contacts-select-container {
+    min-width: 390px;
+  }
+}
+
+@media (max-width: 965px) {
+  .services-btns {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 945px) {
+  .contacts-wrap {
+    flex-direction: column;
+  }
+
+  .contacts h2 {
+    order: 1;
+    align-self: center;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  .contacts-select-container {
+    order: 2;
+    align-self: center;
+    min-width: 450px;
+    margin: 0;
+    margin-bottom: 250px;
+  }
+
+  .contacts-img {
+    order: 3;
+    display: flex;
+    background: url(../assets/img/contact_woman_small.png) no-repeat center;
+    align-self: center;
+    width: 200px;
+    height: 248px;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 890px) {
+
+  .welcome-wrap {
+    align-items: flex-start;
+  }
+
+  .welcome p {
+    padding-left: 5px;
+  }
+
+  .welcome-content {
+    order: 1;
+    max-width: 346px;
+    height: 310px;
+  }
+
+  .welcome .leafs-image1 {
+    order: 2;
+  }
+
+  .about-wrap {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 96px;
+  }
+
+  .about-content {
+    max-width: 668px;
+    height: unset;
+    margin-bottom: 40px;
+  }
+
+  .about-content h2 {
+    max-width: 423px;
+    align-self: center;
+    margin-bottom: 23px;
+  }
+
+  .prices-contact {
+    max-width: 296px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .welcome-wrap {
+    padding-top: 30px;
+    padding-bottom: 71px;
+  }
+
+  .about-wrap {
+    padding-top: 40px;
+    padding-bottom: 96px;
+  }
+
+  .about h2 {
+    margin-bottom: 50px;
+  }
+
+  .about-content {
+    margin-bottom: 67px;
+  }
+
+  .plant-image {
+    width: 250px;
+    height: 258px;
+  }
+
+  .service-wrap {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .service h2 {
+    margin-bottom: 18px;
+  }
+
+  .services-content {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .services-list {
+    min-height: 1426px;
+  }
+
+  .services-item {
+    width: 281px;
+    height: 450px;
+  }
+
+  .services-item img {
+    width: 280px;
+    height: 350px;
+  }
+
+  .svc-item-content {
+    width: 280px;
+    height: 100px;
+  }
+
+  .svc-item-content p {
+    margin: 0 auto;
+    width: 201px;
+  }
+
+
+  .prices-wrap {
+    padding-bottom: 90px;
+  }
+
+  .prices h2 {
+    padding-left: 15px;
+  }
+
+  .prices-block {
+    max-height: 380px;
+  }
+
+  .prices-contact {
+    margin-top: 99px;
+  }
+
+  .prices-contact .btn {
+    margin-top: 30px;
+  }
+
+  .prices .leafs-image2 {
+    margin-top: 30px;
+  }
+
+  .contacts-wrap {
+    padding-top: 40px;
+  }
+
+  .footer-wrap {
+    flex-direction: column;
+    padding-top: 33px;
+    padding-bottom: 18px;
+  }
+
+  .footer-data {
+    margin-bottom: 20px;
+  }
+
+  .rsschool {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 727px) {
+  .nav-list li {
+    margin-left: 40px;
+  }
+
+  .welcome-content {
+    height: 280px;
+  }
+
+  .leafs-image1 {
+    display: none;
+  }
+
+
+  .welcome-wrap {
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .welcome-content {
+    align-items: center;
+    max-width: unset;
+  }
+
+  .welcome h1 {
+    max-width: 400px;
+  }
+
+  .prices-wrap {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  .prices-block {
+    max-height: 365px;
+  }
+
+  .prices h2 {
+    padding: 0;
+  }
+
+  .prices-contact {
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 665px) {
+  .nav-list li {
+    margin-left: 35px;
+  }
+
+  .services-btns {
+    max-width: 400px;
+  }
+
+  .services-btns .btn:nth-child(2) {
+    margin-left: 15px;
+  }
+
+  .services-btns .btn:nth-child(3) {
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .services-list {
+    flex-direction: column;
+    align-content: center;
+    min-height: 2870px;
+  }
+
+}
+
+
+@media (max-width: 610px) {
+  /* BURGER START */
+
+  .burger {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    background-color: #EDF2EC;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+  }
+
+  .nav.show {
+    height: calc(410px - 90px);
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav-list li {
+    margin: 0;
+    height: 51px;
+  }
+
+  .nav-list li a {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+
+  /* BURGER END */
+}
+
+@media (max-width: 559px) {
+  .contacts-select-container {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 510px) {
+  .welcome-content {
+    align-items: flex-start;
+  }
+
+  .welcome-content h1 {
+    max-width: 330px;
+    text-align: unset;
+  }
+
+  .welcome p {
+    padding: 0;
+  }
+
+  .about-content h2 {
+    max-width: 288px;
+  }
+
+  .contacts-wrap {
+    padding-top: 25px;
+  }
+
+  .contacts h2 {
+    margin-bottom: 80px;
+  }
+
+  .contacts-select-container {
+    margin-bottom: 132px;
+  }
+
+  .contacts-img {
+    background: url(../assets/img/contact_woman_small_100.png) no-repeat center;
+    width: 100px;
+    height: 124.25px;
+  }
+}
+
+@media (max-width: 525px) {
+  .about-wrap {
+    padding-top: 30px;
+    padding-bottom: 31px;
+  }
+
+  .about-content {
+    margin-bottom: 0.33px;
+  }
+
+  .plant-image {
+    width: 150px;
+    height: 147px;
+  }
+
+}
+
+@media (max-width: 510px) {
+  .wrap {
+    padding: 0 25px;
+  }
+
+  .about h2 {
+    margin-bottom: 25px;
+  }
+
+  .service-wrap {
+    padding-top: 30px;
+    padding-bottom: 27px;
+  }
+
+  .service h2 {
+    max-width: 187px;
+  }
+
+  .prices-contact {
+    max-width: 230px;
+  }
+
+  .prices .leafs-image2 {
+    width: 132px;
+    height: 154.98px;
+  }
+}
+
+@media (max-width: 439px) {
+
+  .welcome-content {
+    height: 270px;
+  }
+
+  .welcome-content .learn-more .btn {
+    width: 100px;
+    height: 34.14px;
+  }
+
+  .services-btns {
+    max-width: 257px;
+  }
+
+  .services-content .btn {
+    width: 121px;
+    height: 35px;
+  }
+
+  .prices-wrap {
+    padding-top: 25px;
+  }
+
+  .prices-block {
+    max-height: 302px;
+  }
+
+  .prices-items {
+    height: 235px;
+    padding: 29px 22px;
+  }
+
+  .prices-element {
+    width: 180px;
+    height: 49.72px;
+    margin-bottom: 13.92px;
+  }
+
+  .prices-contact .btn {
+    width: 121px;
+    height: 35px;
+  }
+
+  .prices .leafs-image2 {
+    width: 112px;
+    height: 134.98px;
+  }
+}
+
+@media (max-width: 380px) {
+    .nav.show { 
+      height: calc(380px - 90px);
+    }
+
+    .navbar {
+      line-height: unset;
+      padding: 29px 0;
+    }
+
+    .welcome-wrap {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+
+    .welcome-content {
+      height: 252px;
+    }
+
+    .about-wrap {
+      padding-bottom: 32px;
+    }
+
+    .about h2 {
+      margin-bottom: 15px;
+    }
+
+    .services-btns {
+      margin-top: 21px;
+    }
+
+    .services-btns .btn:nth-child(2) {
+      margin-left: 10px;
+    }
+
+    .services-btns .btn:nth-child(3) {
+      margin-top: 9px;
+    }
+
+    .prices-el-text {
+      margin-left: 32px;
+    }
+
+    .prices-contact {
+      margin-top: 20px;
+    }
+
+    .prices-contact .btn {
+      margin-top: 20px;
+    }
+
+    .prices .leafs-image2 {
+      display: none;
+    }
+
+    .contacts h2 {
+      margin-bottom: 61px;
+    }
+
+    .contacts-select-content {
+      padding-right: 25px;
+    }
+
+    .footer-wrap {
+      padding-top: 25px;
+      padding-bottom: 0;
+    }
+
+    .footer-data {
+      margin-bottom: 15px;
+    }
+
+    .rsschool {
+      margin-bottom: 15px;
+    }
+  }
