@@ -91,26 +91,29 @@
     }
 
     .container {
-      height: 0;
-      overflow: hidden;
-      transition: all 0.5s;
+      
     }
 
     .select.active .container {
-      height: auto;
+      
     }
 
     .select-body {
-      display: none;
-      padding-top: 27px;
+      /* display: none; */
+      height: 0;
+      overflow: hidden;
+      /* padding-top: 27px; */
       padding-left: 20px;
-      padding-bottom: 31px;
+      /* padding-bottom: 31px; */
       background-color: #DCE9D9;
       transition: all 0.5s;
     }
 
     .select.active .select-body {
-      display: block;
+      /* display: block; */
+      height: auto;
+      padding-top: 27px;
+      padding-bottom: 31px;
     }
 
     .select-item {
@@ -147,9 +150,27 @@
 
     for (let i = 0; i < accordion.length; i++) {
       accordion[i].addEventListener('click', function () {
-        this.classList.toggle('active');
+        if (this.classList.contains('active')) {
+          this.classList.remove('active');
+        } else {
+          for (let j = 0; j < accordion.length; j++) {
+            accordion[j].classList.remove('active');
+          }
+          this.classList.toggle('active');
+        }
       });
     };
+
+    // for (let i = 0; i < accordion.length; i++) {
+    //   accordion[i].addEventListener('click', function () {
+    //     this.classList.toggle('active');
+
+    //     for (let j = 0; j < accordion.length; j++) {
+    //       accordion[j].classList.remove('active');
+    //     }
+    //     this.classList.toggle('active');
+    //   });
+    // };
 
     const selectItems = document.querySelectorAll('.select-item');
     const selectCurrent = document.querySelector('.select-current')
