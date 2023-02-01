@@ -2,9 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* outline: 1px solid red; */
 }
-
-
 
 .prices-items {
   max-width: 332px;
@@ -76,9 +75,6 @@
   font-size: 16px;
 }
 
-
-
-
 .prices-element .content button {
   width: 85px;
   height: 25px;
@@ -101,4 +97,3 @@
 .prices-element.active .content {
   height: calc(154px - 50px);
 }
-

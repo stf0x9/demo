@@ -16,7 +16,7 @@
 <body>
 
   <div class="prices-items">
-    <div class="basics prices-element">
+    <div class="basics prices-element accordion">
       <div class="label">
         <p>Basics</p>
         <div class="svg"></div>
@@ -29,7 +29,7 @@
         <button class="order">Order</button>
       </div>
     </div>
-    <div class="standard prices-element">
+    <div class="standard prices-element accordion">
       <div class="label">
         <p>Standard</p>
         <div class="svg"></div>
@@ -42,7 +42,7 @@
         <button class="order">Order</button>
       </div>
     </div>
-    <div class="procare prices-element">
+    <div class="procare prices-element accordion">
       <div class="label">
         <p>Pro care</p>
         <div class="svg"></div>
@@ -56,14 +56,116 @@
       </div>
     </div>
   </div>
-  <script>
-  const accordion = document.getElementsByClassName('prices-element');
 
-  for (let i = 0; i < accordion.length; i++) {  
-    accordion[i].addEventListener('click', function() {
-    this.classList.toggle('active');
+  <style>
+    .select {
+      margin-left: 100px;
+      max-width: 450px;
+    }
+
+    .select-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      padding: 0 35px 0 20px;
+      background-color: #D6E7D2;
+      cursor: pointer;
+      transition: background 0.5s;
+    }
+
+    .select.active .select-header {
+      background-color: #C1E698;
+    }
+
+    .select.active .select-icon {
+      transform: rotate(180deg);
+    }
+
+    .select-icon {
+      width: 16px;
+      height: 16px;
+      background: url(../assets/img/accordion-btn2.svg) no-repeat center;
+      background-size: cover;
+      transition: translate 0.5s;
+    }
+
+    .container {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.5s;
+    }
+
+    .select.active .container {
+      height: auto;
+    }
+
+    .select-body {
+      display: none;
+      padding-top: 27px;
+      padding-left: 20px;
+      padding-bottom: 31px;
+      background-color: #DCE9D9;
+      transition: all 0.5s;
+    }
+
+    .select.active .select-body {
+      display: block;
+    }
+
+    .select-item {
+      line-height: 35px;
+      cursor: pointer;
+      color: #499A18;
+    }
+
+    .select-item:not(:last-child) {
+      padding-bottom: 12px;
+    }
+
+    .select-item:hover {
+      color: #717171;
+    }
+  </style>
+  <div class="select accordion">
+    <div class="select-header">
+      <span class="select-current">City</span>
+      <div class="select-icon"></div>
+    </div>
+    <div class="container">
+      <div class="select-body">
+        <div class="select-item">Canandaigua, NY</div>
+        <div class="select-item">New York City</div>
+        <div class="select-item">Yonkers, NY</div>
+        <div class="select-item">Sherrill, NY</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const accordion = document.getElementsByClassName('accordion');
+
+    for (let i = 0; i < accordion.length; i++) {
+      accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active');
+      });
+    };
+
+    const selectItems = document.querySelectorAll('.select-item');
+    const selectCurrent = document.querySelector('.select-current')
+    const selectHeader = document.querySelector('.select-header')
+
+    selectItems.forEach(item => {
+      item.addEventListener('click', function () {
+        const selectedText = this.textContent;
+        selectCurrent.textContent = selectedText;
+        if (selectedText !== 'City') {
+          selectHeader.style.backgroundColor = '#C1E698';
+        }
+      });
     });
-  };
+
+
   </script>
 </body>
 
